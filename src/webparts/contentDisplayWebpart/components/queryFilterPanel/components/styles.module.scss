@@ -1,0 +1,29 @@
+.filter-item {
+    display: block;
+    padding: 5px 0;
+    background: rgb(255, 255, 255);
+    border: none;
+    font-size: 14px;
+    margin-top: 5px;
+
+
+    .remove-btn {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        background: rgb(255, 255, 255);
+        border: none;
+        font-size: 12px;
+        margin-top: 5px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+
+            path {
+                fill: rgb(0, 75, 117);
+            }
+        }
+    }
+}

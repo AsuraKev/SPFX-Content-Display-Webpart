@@ -1,0 +1,4 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/write-manifests.schema.json",
+  "cdnBasePath": "https://fphcareonline.sharepoint.com/sites/customsolutionscontent/Custom%20Webparts/CustomDisplayWebpart"
+}

@@ -1,0 +1,19 @@
+.mansory-grid-wrapper{
+    display: flex;
+
+    .col{
+
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .mansory-grid-wrapper{
+        flex-direction: column;
+
+        .col{
+            margin: 0;
+        }
+    }
+  }
+  

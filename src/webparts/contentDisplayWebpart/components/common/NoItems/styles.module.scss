@@ -1,0 +1,21 @@
+.wrapper {
+    display: block;
+    text-align: center;
+    width: 100%;
+
+    .icon-wrapper {
+        max-width: 200px;
+        display: inline-block;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .msg-text {
+        font-size: 19px;
+        font-weight: 100;
+        text-align: center;
+    }
+}

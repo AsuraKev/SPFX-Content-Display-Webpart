@@ -1,0 +1,130 @@
+.wrapper {}
+
+.mask-bg {
+    background-color: rgb(229, 229, 229);
+    -webkit-animation: pulse-infinite 0.65s infinite alternate;
+    animation: pulse-infinite 0.65s infinite alternate;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.rectangle-mask {
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.circle-mask {
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.mega-block {
+    display: block;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-direction--column {
+
+    flex-direction: column;
+}
+
+.flex--centerVertical {
+    align-items: center;
+}
+
+.flex--endVertical {
+    align-items: flex-end;
+}
+
+.flex--horizontalCentered {
+    justify-content: center;
+}
+
+.flex--horizontalEnd {
+    justify-content:flex-end;
+}
+
+//configure margin gutter sizes
+$max-margin: 200;
+
+@for $i from -20 through $max-margin {
+    .margin-top#{$i}px {
+        margin-top: #{$i}px;
+    }
+
+    .margin-bottom#{$i}px {
+        margin-bottom: #{$i}px;
+    }
+
+    .margin-left#{$i}px {
+        margin-left: #{$i}px;
+    }
+
+    .margin-right#{$i}px {
+        margin-right: #{$i}px;
+    }
+}
+
+//configure height dimension sizes
+$max-height: 500;
+
+@for $i from 5 through $max-height {
+    .height-#{$i}px {
+        height: #{$i}px;
+    }
+}
+
+//configure width dimension sizes (percentage)
+$max-width: 100;
+
+@for $i from 5 through $max-width {
+    .width-#{$i}percent {
+        width: #{$i}#{"%"};
+    }
+}
+
+//configure width dimension sizes (px)
+$max-width: 100;
+
+@for $i from 1 through $max-width {
+    .width-#{$i}px {
+        width: #{$i}px;
+    }
+}
+
+//configure paddings (px)
+$max-padding: 100;
+
+@for $i from 1 through $max-padding {
+    .padding-#{$i}px {
+        padding: #{$i}px;
+    }
+
+    .padding-left#{$i}px {
+        padding-left: #{$i}px;
+    }
+
+    .padding-right#{$i}px {
+        padding-right: #{$i}px;
+    }
+
+    .padding-top#{$i}px {
+        padding-top: #{$i}px;
+    }
+
+    .padding-bottom#{$i}px {
+        padding-bottom: #{$i}px;
+    }
+}
+
+@keyframes pulse-infinite {
+    0% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

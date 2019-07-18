@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAA;EACf,OAAO,EAAC,KAAK;CAChB",
+    "sources": [
+        "templateBindingPanel.module.scss"
+    ],
+    "names": [],
+    "file": "templateBindingPanel.module.css"
+}

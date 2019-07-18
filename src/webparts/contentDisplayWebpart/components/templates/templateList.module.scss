@@ -1,0 +1,193 @@
+.wrapper {
+    display: block;
+
+    .section-header {
+        display: flex;
+        font-size: 21px;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 32px;
+        align-items: center;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 65px;
+            height: 2px;
+            width: 120px;
+            background: rgb(61, 97, 135);
+            margin-left: 100px;
+        }
+
+        img {
+            max-width: 100px;
+            transform: rotateZ(-9deg);
+        }
+    }
+
+    .content {
+        .templates-container {
+            flex-wrap: wrap;
+            padding: 10px;
+            background: rgb(232, 234, 237);
+            margin-bottom: 12px;
+            display:flex;
+            .template-item {
+                box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+                background: rgb(255, 255, 255);
+                min-height: 372px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-radius: 4px;
+                margin-bottom: 10px;
+                width: 190px;
+                min-width: 190px;
+                -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                position: relative;
+                margin: 10px;
+
+                &:hover {
+                    border: 2px solid rgb(61, 97, 135);
+                }
+
+                &.template-selected {
+                    border: 2px solid #3D6187;
+                    border-top: 6px solid #3D6187;
+
+                    .container {
+                        .select-indicator {
+                            background: #3D6187;
+                            transition: .3s;
+
+                            &:after {
+                                -webkit-transform: rotate(45deg) scale(1);
+                                transform: rotate(45deg) scale(1);
+                                position: absolute;
+                                width: 5px;
+                                height: 12px;
+                                display: block;
+                                top: 5px;
+                                left: 12px;
+                                content: " ";
+                                border-width: 0 2px 2px 0;
+                                border-style: solid;
+                                border-color: rgb(255, 255, 255);
+                                -o-border-image: initial;
+                                border-image: initial;
+                                border-top: 0;
+                                border-left: 0;
+                                margin: 0 auto;
+                                -webkit-transition: all .3s cubic-bezier(.12, .4, .29, 1.46) .1s;
+                                transition: all .3s cubic-bezier(.12, .4, .29, 1.46) .1s;
+                            }
+                        }
+                    }
+
+                }
+
+                .container {
+                    .select-indicator {
+                        width: 30px;
+                        height: 30px;
+                        display: inline-block;
+                        border-radius: 50%;
+                        top: 9px;
+                        right: 11px;
+                        z-index: 1;
+                        position: absolute;
+                        background: rgb(255, 255, 255);
+                        -webkit-box-shadow: 0 1px 2px 0 rgba(60, 66, 87, .1), 0 0 3px 0 rgba(0, 0, 0, .07);
+                        box-shadow: 0 1px 2px 0 rgba(60, 66, 87, .1), 0 0 3px 0 rgba(0, 0, 0, .07);
+                    }
+
+                    .template-name {
+                        text-align: center;
+                        font-weight: 600;
+                        display: block;
+                        font-size: 15px;
+                        padding: 9px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        background: rgb(247, 249, 250);
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        color: rgb(128, 134, 139);
+                    }
+
+                    img {
+                        max-width: 190px;
+                    }
+                }
+
+
+            }
+
+            .template-placeholder {
+                width: 190px;
+                height: 0;
+                margin: 10px;
+                display: block;
+                -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                padding: 10px;
+
+            }
+        }
+
+        .action-panel {
+            display: flex;
+            justify-content: flex-end;
+
+            .save-btn {
+                background-color: #3D6187;
+                border-color: #3D6187;
+                transition: .3s;
+                color: white;
+                min-width: 85px;
+                border: 1px solid;
+
+                &:hover {
+                    background-color: #004B75;
+                    border-color: #004B75;
+                }
+
+                &:disabled {
+                    opacity: .6;
+                    cursor: not-allowed;
+                }
+            }
+
+            .cancel-btn {
+                background: none;
+                border: 1px solid rgb(128, 128, 128);
+                padding: 7px;
+                display: inline-block;
+                min-width: 85px;
+                cursor: pointer;
+                transition: .3s;
+                outline: none;
+                margin-left: 5px;
+
+                &:hover {
+                    border-color: #3D6187;
+                    transition: .3s;
+                }
+
+
+            }
+        }
+    }
+}

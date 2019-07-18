@@ -1,0 +1,77 @@
+.field-wrapper{
+    .field-container{
+        display:flex;
+        width: 100%;
+        .field-picker{
+            flex: 1;
+            margin-left: 8px;
+            cursor: pointer;
+            background: rgb(61, 97, 135);
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(61, 97, 135);
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+    }
+}
+
+//modal
+.modal-container{
+    display: block;
+    width: 50%;
+    padding: 21px;
+
+    
+    .modal-header{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        height:40px;
+        justify-content: space-between;
+        .modal-title{
+            margin: 0;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .close-btn{
+            background: none;
+            border: 1px solid rgb(128, 128, 128);
+            padding: 7px;
+            display: inline-block;
+            min-width: 85px;
+            cursor: pointer;
+            transition:.3s;
+            outline: none;
+            &:hover{
+                background-color:#3D6187;
+                border-color:#3D6187;
+                transition:.3s;
+                color:white;
+
+            }
+
+            &:disabled{
+                opacity:.6;
+                cursor: not-allowed;
+            }
+
+        }
+    }
+
+    .modal-body{
+        padding: 10px;
+    }
+}
+
+.modal-large{
+    width:1200px;
+}
+
+.modal-medium{
+    width:800px;
+}
+
+.modal-small{
+    width:500px;
+}
